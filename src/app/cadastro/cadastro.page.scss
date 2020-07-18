@@ -3,16 +3,18 @@ ion-content{
   
   ion-item-group{
     max-width: 300px;
-    margin: 40px auto;
+    margin: 80px auto;
     ion-item {
       --background: none;
+      margin-bottom: 30px;
       ion-img{
-        width:70px;
-        height: 70px;
+        width: 100px;
+        height: 100px;
         text-align: center;
         margin: 0 auto;
       }
     }
+ 
     h1{
       text-align:center;
       font-family: Quicksand;
@@ -73,6 +75,6 @@ ion-content{
         cursor: pointer;
         text-decoration:underline ;
       }
-   }
-  }  
-}
+    }
+  }
+}  

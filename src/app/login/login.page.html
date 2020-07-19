@@ -7,11 +7,11 @@
     </ion-item>
     <h1>RestauranteDelivery</h1>
     
-    <ion-input  placeholder='Email'  required></ion-input>
+    <ion-input  placeholder='Email' [(ngModel)]="email" required></ion-input>
 
-    <ion-input  type="password" required placeholder='Senha'></ion-input>
+    <ion-input  type="password"  [(ngModel)]="senha" required placeholder='Senha'></ion-input>
     
-    <ion-button type="submit" expand="block" class="btn-entrar">Entrar</ion-button>
+    <ion-button type="submit" expand="block" class="btn-entrar" (click)="login()">Entrar</ion-button>
 
     <hr>
 

@@ -6,13 +6,13 @@
       <ion-img src="/assets/camera.png"></ion-img>
     </ion-item>
     
-    <ion-input  placeholder='Nome de usuário'  required></ion-input>
+    <ion-input  [(ngModel)]="nome" placeholder='Nome de usuário'  required></ion-input>
 
-    <ion-input  placeholder='Email'  required></ion-input>
+    <ion-input   [(ngModel)]="email" placeholder='Email'  required></ion-input>
 
-    <ion-input  type="password" required placeholder='Senha'></ion-input>
+    <ion-input  [(ngModel)]="senha"  type="password" required placeholder='Senha'></ion-input>
     
-    <ion-button type="submit" expand="block" class="btn-entrar">Cadastrar</ion-button>
+    <ion-button type="submit" expand="block" class="btn-entrar" (click)="cadastroUsuario()">Cadastrar</ion-button>
 
     <hr>
 

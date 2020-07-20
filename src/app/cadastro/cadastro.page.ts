@@ -24,7 +24,15 @@ export class CadastroPage implements OnInit {
 
 
 
-  public   cadastroUsuario() {
+  public cadastroUsuario() {
+
+      if(this.nome === "" || this.email==="" || this.senha===""){
+
+        this.MensagemView("Preencha todos campos corretamente!")
+        return;
+      }
+      else
+
       this.webservice.cadastroUsuario({
         nome : this.nome,
         email : this.email,
@@ -32,6 +40,7 @@ export class CadastroPage implements OnInit {
       })
       .then( sucesso =>{
         this.MensagemView("Bem vindo(a) "+ this.nome)
+        this.webservice.AlterarUsuario(this.nome);
         this.router.navigate(["home"])
 
       })
@@ -39,9 +48,6 @@ export class CadastroPage implements OnInit {
         this.MensagemView(this.webservice.errorFirebase(error.code))
         return;
       })
-
-
-
     }
 
 

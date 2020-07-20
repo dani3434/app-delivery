@@ -3,14 +3,8 @@ import { Injectable } from '@angular/core';
 
 import { AngularFirestore } from '@angular/fire/firestore';
 import { AngularFireAuth } from '@angular/fire/auth';
-import { async } from '@angular/core/testing';
-import { promise } from 'protractor';
 
-interface  CadastroForm {
-  nome : string,
-  email : string,
-  senha : string
-}
+import { auth } from 'firebase';
 
 
 
@@ -21,39 +15,82 @@ interface  CadastroForm {
 
 export class AppDeliveryService {
 
+   
+ private provider =  new auth.FacebookAuthProvider();
+
+ public usuarioInfor : firebase.User;
 
 
   constructor(
-    private firebase : AngularFirestore, 
-    private auth : AngularFireAuth) { }
+    private angularFire : AngularFirestore, 
+    private authAngular : AngularFireAuth) {
+    
 
+    this.authAngular.onAuthStateChanged((user) => {
+        if (user) {
+            this.usuarioInfor = user
+        } else {
+                 // usuario não estar Logado  :(
+  
+        }
+      })
+
+
+     }
+
+
+
+     public getauthReference(){
+     
+      return this.authAngular.currentUser.then;
+     }
 
   public login(email: string, senha: string){
-      return this.auth.signInWithEmailAndPassword(email.replace(/\s/g, ''),senha)
-      
+    
+    return this.authAngular.setPersistence(auth.Auth.Persistence.SESSION)
+    .then(()=> {
+      return this.authAngular.signInWithEmailAndPassword(email.replace(/\s/g, ''),senha)
+    })
+
+
     }
 
 
 
   public cadastroUsuario(user : CadastroForm) : Promise<firebase.auth.UserCredential>{
 
-             return this.auth.createUserWithEmailAndPassword(user.email.replace(/\s/g,''),user.senha)
-
+      return this.authAngular.createUserWithEmailAndPassword(user.email.replace(/\s/g,''),user.senha)
+  
     }
 
 
 
+    public facebookLogin(){
+
+     return  this.authAngular.signInWithPopup(this.provider)
+    }
+
     
-   async AlterarUsuario(user : CadastroForm) : Promise<void>{
-     (await this.auth.currentUser).updateProfile({
-      displayName: user.nome,
+   async AlterarUsuario(nome: string , photoURL?: string) : Promise<void>{
+     (await this.authAngular.currentUser).updateProfile({
+      displayName: nome,
       photoURL : "https://firebasestorage.googleapis.com/v0/b/delivery-fed07.appspot.com/o/WhatsApp%20Image%202020-07-18%20at%2019.37.52.jpeg?alt=media&token=1c9ef92e-8107-4081-a1f5-fc7483c5c188"
   })
-  }
+  
+ }
 
 
 
-  errorFirebase(erro : string) {
+
+    checkLogged(){
+      
+   return  this.authAngular;
+    }
+
+
+
+
+  errorFirebase(erro : string) { 
     let request = ""
       switch(erro) {      
         case "auth/user-disabled":
@@ -86,6 +123,9 @@ export class AppDeliveryService {
        
         case "auth/argument-error": 
              request = "preencha todos os campos!"
+        break;
+        case "auth/web-storage-unsupported":
+          request = "É necessário habilitar Cookies Neste Navegador!!!"
         break;
           
         default: request = erro;

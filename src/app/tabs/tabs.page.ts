@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { AppDeliveryService } from '../services/app-delivery.service';
 
 @Component({
   selector: 'app-tabs',
@@ -7,6 +8,15 @@ import { Component } from '@angular/core';
 })
 export class TabsPage {
 
-  constructor() {}
+
+
+  constructor( private webservice : AppDeliveryService) {
+
+
+
+  }
+
+
+
 
 }

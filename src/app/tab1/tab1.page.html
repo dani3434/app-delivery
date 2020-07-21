@@ -1,27 +1,67 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      {{ name }}
-    </ion-title>
-    <ion-thumbnail slot="end" (click)="openCustom()">
-      <img [src]="foto">
-    </ion-thumbnail>
+
+    <div class="cabecalho-itens">
+      <ion-title>
+        {{ name }}
+      </ion-title>
+      <ion-thumbnail slot="end" (click)="openCustom()">
+        <img [src]="foto">
+      </ion-thumbnail>
+    </div>
+
   </ion-toolbar>
  
 </ion-header>
 
 <ion-content [fullscreen]="true">
- 
-
-
+   
+  
   
   <ion-menu side="start" menuId="custom" contentId="main" class="my-custom-menu">
     <ion-header>
-      <ion-toolbar color="tertiary">
-        <ion-title>Custom Menu</ion-title>
+      <ion-toolbar>
+
+        <div class="toolbar-cabecalho">
+          <ion-title>
+            {{ name }}
+          </ion-title>
+  
+          <ion-thumbnail slot="end">
+            <img [src]="foto">
+          </ion-thumbnail>
+        </div>
+        
       </ion-toolbar>
     </ion-header>
     <ion-content>
+
+      <div class="pedidos-container">
+        <ion-text>
+          <h2>Pedidos</h2>
+        </ion-text>
+
+        <ion-row class="pedidos-itens">
+          <ion-col size="8">
+            <div class="pedidos-precos">
+              <div class="pedidos-img">
+                <img src="/assets/pedidos-1.jpg">
+                <div class="overlay"></div>
+              </div>
+              
+              <span>Combo Fast-food</span>
+            </div>
+
+          </ion-col>
+          <ion-col size="4" >
+            <span class="pedidos-preco">19,90</span>
+
+            <ion-button href="#" class="pedidos-btn">Ver Pedido</ion-button>
+          </ion-col>
+        </ion-row>
+
+      </div>
+
       <ion-list>
         <ion-item>Menu Item</ion-item>
         <ion-item>Menu Item</ion-item>

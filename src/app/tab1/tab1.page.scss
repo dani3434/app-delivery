@@ -1,6 +1,70 @@
 .perfil-image {
     margin-top: 5px;
     border-radius: 10px !important;
-
     overflow: hidden;
+}
+.header-ios ion-toolbar:last-of-type {
+  --border-width: 0;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+.cabecalho-itens{
+   display: flex; 
+   flex-direction: row-reverse; 
+   justify-content: space-between;
+}
+.toolbar-cabecalho{
+   flex-direction: row-reverse; 
+}
+
+.pedidos-container{
+  width: 290px;
+  margin: 0 5px;
+  h2{
+    font-weight: bold;
+    font-size: 17px;
+  }
+}
+.pedidos-precos{
+  display: flex;  
+  span{
+    font-size: 12px;
+    font-weight: bold;  
+    margin-left: 10px;
+  }
+}
+.pedidos-img{
+  position: relative;
+  width: 68px;
+  height: 60px;
+
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.55);
+    mix-blend-mode: darken;
+    border-radius: 10px;
+}
+.pedidos-preco{
+   text-align: right; 
+   color: var(--ion-color-secondary);
+   margin-left: 43px;
+   font-weight: bold;
+}
+.pedidos-btn{
+   width: 80px;
+   height: 25px;  
+   --background: var(ion-color-primary);
+   font-size: 10px;
+   font-weight: bold;  
+   --color: var(ion-text-color);
+   margin-top: 10px;
+}
+.pedidos-itens{
+  margin-bottom: 20px;  
 }

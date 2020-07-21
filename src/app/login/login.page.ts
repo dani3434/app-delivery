@@ -89,7 +89,7 @@ export class LoginPage implements OnInit {
           this.MensagemView(`
           Se você estar tentando entrar pelo modo  \n 
           "Anônimo" de seu navegador saiba que isso \n
-          não funcioná, \ Pois p mesmo não permite  \n
+          não funciona, \ Pois p mesmo não permite  \n
           Cookies. Por favor retorne ao navegador  \n
           normal ou habilite o Cookies nas configurações
           `,"bottom", 120000)

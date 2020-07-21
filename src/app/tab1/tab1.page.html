@@ -63,17 +63,58 @@
       </div>
 
       <ion-list>
-        <ion-item>Menu Item</ion-item>
-        <ion-item>Menu Item</ion-item>
-        <ion-item>Menu Item</ion-item>
-        <ion-item>Menu Item</ion-item>
-        <ion-item>Menu Item</ion-item>
+        <ion-item detail lines="full">Chat</ion-item>
+        <ion-item detail lines="full">Lista de endereço</ion-item>
+        <ion-item detail lines="full">Notificações</ion-item>
+        <ion-item detail lines="full">Ajuda</ion-item>
+        <ion-item detail lines="full">Sair</ion-item>
       </ion-list>
     </ion-content>
   </ion-menu>
   
+  <!-- Navegação Dos Botões -->
+  <div class='btns'>
+    
+    <div class='btns-item'>
+      <ion-button>
+        <img src='/assets/bebida.png'>
+      </ion-button>
+      <span>Bebidas</span>
+    </div>
+    
+    <div class='btns-item'>
+      <ion-button>
+        <img src='/assets/pizza.png'>
+      </ion-button>
+      <span>Pizzas</span>
+    </div>
 
+    <div class='btns-item'>
+      <ion-button>
+        <img src='/assets/hamburger.png'>
+      </ion-button>
+      <span>Hamburgers</span>
+    </div>
+
+    <div class='btns-item'>
+      <ion-button>
+        <img src='/assets/comida-de-rua.png'>
+      </ion-button>
+      <span>Comidas de Rua</span>
+    </div>
+
+    <div class='btns-item'>
+      <ion-button>
+        <img src='/assets/churrasco.png'>
+      </ion-button>
+      <span>Churrasco</span>
+    </div>
+  </div>
   
+  <ion-thumbnail class='banner'>
+    <img src="/assets/banner.jpg">
+  </ion-thumbnail>
+
   <ion-router-outlet id="main"></ion-router-outlet>
 
 </ion-content>

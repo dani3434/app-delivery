@@ -12,6 +12,12 @@
    flex-direction: row-reverse; 
 }
 
+.btns-item ion-button:hover{
+  --background: #DACABE;
+}
+
+
+
 .pedidos-container{
   width: 290px;
   margin: 0 5px;

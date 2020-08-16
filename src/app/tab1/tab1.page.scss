@@ -74,7 +74,6 @@
 :host {
   ion-item{
     --border-color: var(--ion-color-medium);
-
   }
   ion-item:hover{
     --background: rgba(210, 210, 210, 0.4);
@@ -121,5 +120,22 @@
     --border-radius:10px;
     height: 125px;
     margin: 30px 5px;
+  }
+  .mais-pedidos{
+    margin:15px 0;
+  }
+  .mais-pedidos h2{
+    font-weight: bold;
+    font-size: 16px;
+    margin-left: 15px;
+    color: var(--ion-text-color);
+  }
+  ion-slide{
+   width: 115px !important;
+   margin: 5px;
+  }
+  ion-slide:first-child{
+   margin-left: 15px;
+   margin-right: 5px;
   }
 }

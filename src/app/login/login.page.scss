@@ -19,7 +19,7 @@ ion-content{
       font-weight: bold;
       font-size: 48px;
       line-height: 115.2%;
-      --color:var(--ion-color-primary-contrast);
+      color: var(--ion-color-primary-contrast);
       margin-bottom: 30px;
     }
   
@@ -67,6 +67,7 @@ ion-content{
       font-size: 14px;
       text-align: center;
       margin-top: 30px;
+      color: var(--ion-color-primary-contrast);
       .call{
         color: var(--ion-color-primary);
         font-weight: bold;

@@ -130,12 +130,12 @@
     margin-left: 15px;
     color: var(--ion-text-color);
   }
-  ion-slide{
-   width: 115px !important;
-   margin: 5px;
+
+.img-slid{
+  padding: 5px;
   }
   ion-slide:first-child{
-   margin-left: 15px;
+   margin-left: 5px;
    margin-right: 5px;
   }
 }

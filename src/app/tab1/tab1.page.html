@@ -1,16 +1,14 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
+<ion-header>
+  <div>
 
     <div class="cabecalho-itens">
-      <ion-title>
-        {{ name }}
-      </ion-title>
-      <ion-thumbnail slot="end" (click)="openCustom()">
+      <div slot="end" (click)="openCustom()" class='img-profile'>
         <img [src]="foto">
-      </ion-thumbnail>
+      </div>
+      <h1 class="tab1-titulo">{{ name }}</h1>
     </div>
 
-  </ion-toolbar>
+  </div>
  
 </ion-header>
 
@@ -77,44 +75,44 @@
   <div class='btns'>
     
     <div class='btns-item'>
-      <ion-button>
+      <button>
         <img src='/assets/bebida.png'>
-      </ion-button>
+      </button>
       <span>Bebidas</span>
     </div>
     
     <div class='btns-item'>
-      <ion-button>
+      <button>
         <img src='/assets/pizza.png'>
-      </ion-button>
+      </button>
       <span>Pizzas</span>
     </div>
 
     <div class='btns-item'>
-      <ion-button>
+      <button>
         <img src='/assets/hamburger.png'>
-      </ion-button>
+      </button>
       <span>Hamburgers</span>
     </div>
 
     <div class='btns-item'>
-      <ion-button>
+      <button>
         <img src='/assets/comida-de-rua.png'>
-      </ion-button>
+      </button>
       <span>Comidas de Rua</span>
     </div>
 
     <div class='btns-item'>
-      <ion-button>
+      <button>
         <img src='/assets/churrasco.png'>
-      </ion-button>
+      </button>
       <span>Churrasco</span>
     </div>
   </div>
   
-  <ion-card>
+  <div class="banner"> 
     <img src="/assets/banner.jpg"/>
-  </ion-card>
+  </div>
 
   <div class="mais-pedidos">
     <h2>Mais Pedidos</h2>

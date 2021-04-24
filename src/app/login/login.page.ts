@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { AppDeliveryService } from '../services/app-delivery.service';
-import { ToastController } from '@ionic/angular';
+import { NavController, ToastController } from '@ionic/angular';
 
 @Component({
   selector: 'app-login',
@@ -22,6 +22,7 @@ export class LoginPage implements OnInit {
   constructor(
     private router : Router,
     private webservice : AppDeliveryService,
+    public navCtrl: NavController,
     public toast : ToastController) {
 
 
@@ -51,9 +52,9 @@ export class LoginPage implements OnInit {
       else
       this.webservice.login(this.email, this.senha)
       .then(date=>{
-        this.MensagemView("Bem vindo(a) de volta "+date.user.displayName, "bottom")
+        this.MensagemView("Bem vindo(a) de volta "+date.user.displayName, "middle")
 
-        this.router.navigate(['home'])
+        this.navCtrl.navigateRoot('/home');
 
       })
       .catch(error =>{

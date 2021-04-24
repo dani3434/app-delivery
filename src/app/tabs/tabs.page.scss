@@ -1,3 +1,28 @@
 ion-tabs{
   --background: #fff;
 }
+
+:host {
+  ion-item{
+    --border-color: var(--ion-color-medium);
+  }
+  ion-item:hover{
+    --background: rgba(210, 210, 210, 0.4);
+  }
+  ion-item:first-child{
+    border-top: 1px solid var(--ion-color-medium);
+    --border-color: var(--ion-color-medium);
+  }
+  
+  
+  .btns-item ion-button{
+    --background: #F5EEE9;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+  }
+  .btns-item ion-button:hover{
+    --background: #DACABE;
+  }
+  
+}

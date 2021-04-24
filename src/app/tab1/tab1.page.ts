@@ -2,7 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { AppDeliveryService } from '../services/app-delivery.service';
 import { app } from 'firebase';
 import { Router } from '@angular/router';
-import { MenuController } from '@ionic/angular';
+import { MenuController, NavController } from '@ionic/angular';
+import { BebidasPage } from '../template/bebidas/bebidas.page';
 
 
 @Component({
@@ -23,6 +24,7 @@ export class Tab1Page implements OnInit{
   constructor(
     private router : Router,
      private webservice : AppDeliveryService,
+     private nav : NavController,
      private menu: MenuController) {
 
   }
@@ -37,8 +39,8 @@ export class Tab1Page implements OnInit{
       }else{
 
         this.router.navigateByUrl('', { skipLocationChange: false }).then(() => {
-          location.reload();
-          this.router.navigate(['home']);
+          
+          this.router.navigate(['']);
           
       }); 
      
@@ -46,15 +48,13 @@ export class Tab1Page implements OnInit{
 
   }
      
-    
+
+
 
   openCustom() {
-    this.menu.enable(true, 'custom');
-    this.menu.open('custom');
+    this.menu.enable(true, 'menu-global');
+    this.menu.open('menu-global');
   }
-
-  
-
 
   
 

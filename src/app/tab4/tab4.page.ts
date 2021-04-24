@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { app } from 'firebase';
 import { Router } from '@angular/router';
 import { AppDeliveryService } from '../services/app-delivery.service';
+import { MenuController } from '@ionic/angular';
 
 @Component({
   selector: 'app-tab4',
@@ -14,7 +15,10 @@ export class Tab4Page implements OnInit {
   public name : string ; 
   public foto : string ;
 
-  constructor(private router : Router, private webservice : AppDeliveryService) {}
+  constructor(
+    private menu: MenuController,
+    private router : Router,
+    private webservice : AppDeliveryService) {}
 
 
 
@@ -37,5 +41,12 @@ export class Tab4Page implements OnInit {
     }
   }
   
+
+  
+  openCustom() {
+    this.menu.enable(true, 'menu-global');
+    this.menu.open('menu-global');
+  }
+
 
 }

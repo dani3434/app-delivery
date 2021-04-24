@@ -20,6 +20,46 @@ const routes: Routes = [
   },  {
     path: 'tab4',
     loadChildren: () => import('./tab4/tab4.module').then( m => m.Tab4PageModule)
+  },
+  {
+    path: 'endereco-menu',
+    loadChildren: () => import('./template/endereco-menu/endereco-menu.module').then( m => m.EnderecoMenuPageModule)
+  },
+  {
+    path: 'ajuda-menu',
+    loadChildren: () => import('./template/ajuda-menu/ajuda-menu.module').then( m => m.AjudaMenuPageModule)
+  },
+  {
+    path: 'notification',
+    loadChildren: () => import('./template/notification/notification.module').then( m => m.NotificationPageModule)
+  },
+  {
+    path: 'favorito-menu',
+    loadChildren: () => import('./template/favorito-menu/favorito-menu.module').then( m => m.FavoritoMenuPageModule)
+  },
+  {
+    path: 'acompanhamento-pedido',
+    loadChildren: () => import('./template/acompanhamento-pedido/acompanhamento-pedido.module').then( m => m.AcompanhamentoPedidoPageModule)
+  },
+  {
+    path: 'bebidas',
+    loadChildren: () => import('./template/bebidas/bebidas.module').then( m => m.BebidasPageModule)
+  },
+  {
+    path: 'pizza-list',
+    loadChildren: () => import('./template/pizza-list/pizza-list.module').then( m => m.PizzaListPageModule)
+  },
+  {
+    path: 'hamburguer-list',
+    loadChildren: () => import('./template/hamburguer-list/hamburguer-list.module').then( m => m.HamburguerListPageModule)
+  },
+  {
+    path: 'fast-food-list',
+    loadChildren: () => import('./template/fast-food-list/fast-food-list.module').then( m => m.FastFoodListPageModule)
+  },
+  {
+    path: 'churrasco-list',
+    loadChildren: () => import('./template/churrasco-list/churrasco-list.module').then( m => m.ChurrascoListPageModule)
   }
 
 ];

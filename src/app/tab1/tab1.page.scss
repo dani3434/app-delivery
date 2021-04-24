@@ -60,26 +60,13 @@
   margin: 30px auto;
 }
 
-.pedidos-container{
-  width: 290px;
-  margin: 0 5px;
-  h2{
-    font-weight: bold;
-    font-size: 17px;
-  }
-}
-.pedidos-precos{
-  display: flex;  
-  span{
-    font-size: 12px;
-    font-weight: bold;  
-    margin-left: 10px;
-  }
-}
-.pedidos-img{
+
+
+.img-sidemenu{
   position: relative;
   width: 68px;
   height: 60px;
+  margin: auto;
 
 }
 .overlay{
@@ -108,9 +95,6 @@
    font-weight: bold;  
    --color: var(ion-color-primary-contrast);
    margin-top: 10px;
-}
-.pedidos-itens{
-  margin-bottom: 20px;  
 }
 
 :host {
@@ -158,3 +142,4 @@
    margin-right: 5px;
   }
 }
+

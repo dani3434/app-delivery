@@ -1,6 +1,6 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>
+  <ion-toolbar class="header">
+    <ion-title class="botao-menu">
   
       <ion-icon name="menu-outline" (click)="openCustom()"></ion-icon>
     
@@ -15,16 +15,15 @@
   <ion-router-outlet id="main"></ion-router-outlet>
 
 
-  <ion-item>
-    <ion-label>Endereço</ion-label>
-    <ion-select  interface="action-sheet" placeholder="Selecionar Endereço">
-      <ion-select-option value="yellow">Yellow</ion-select-option>
-      <ion-select-option value="orange">Orange</ion-select-option>
-      <ion-select-option value="green">Green</ion-select-option>
-    </ion-select>
+  <ion-item lines='none' class="endereco">
+    <label for="cars">Endereço:</label>
+
+    <select name="cars" id="cars">
+      <option value="mercedes">Mercedes,Rua 132</option>
+      <option value="volvo">Volvo,Rua 12</option>
+      <option value="saab">Saab,Rua 245</option>      
+    </select>
   </ion-item>
-<br>
-<br>
   <!-- Navegação Dos Botões -->
   <div class='btns'>
     

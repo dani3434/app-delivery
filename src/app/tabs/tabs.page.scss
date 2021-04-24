@@ -2,17 +2,33 @@ ion-tabs{
   --background: #fff;
 }
 
+.lista-menu{
+  list-style: none;
+  padding: 0;
+  li{
+    padding-left: 15px;
+    padding: 10px;
+    border-top: 2px solid #cacaca;
+  }
+  li:hover{
+    background: rgba(210, 210, 210, 0.4);
+  }
+  li:last-child{
+    border-bottom: 2px solid #cacaca;
+
+  }
+}
 :host {
-  ion-item{
-    --border-color: var(--ion-color-medium);
-  }
-  ion-item:hover{
-    --background: rgba(210, 210, 210, 0.4);
-  }
-  ion-item:first-child{
-    border-top: 1px solid var(--ion-color-medium);
-    --border-color: var(--ion-color-medium);
-  }
+  // ion-item{
+  //   --border-color: var(--ion-color-medium);
+  // }
+  // ion-item:hover{
+  //   --background: rgba(210, 210, 210, 0.4);
+  // }
+  // ion-item:first-child{
+  //   border-top: 1px solid var(--ion-color-medium);
+  //   --border-color: var(--ion-color-medium);
+  // }
   
   
   .btns-item ion-button{
@@ -25,4 +41,17 @@ ion-tabs{
     --background: #DACABE;
   }
   
+}
+
+.pedidos-precos{
+  display: flex;
+  flex-direction: column;
+  .img-sidemenu{
+    margin-bottom: 15px;
+    margin-top: 10px;
+  }
+  h3{
+    font-size: 20px;
+    text-transform: uppercase;
+  }
 }

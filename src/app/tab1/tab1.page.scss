@@ -5,18 +5,60 @@
 }
 .cabecalho-itens{
    display: flex; 
-   flex-direction: row-reverse; 
-   justify-content: space-between;
+   box-shadow: 0px 4px 8px 3px rgba(186,186,186,0.82);
+   align-items: center;
+}
+.img-profile{
+  width: 50px;
+  margin: 5px;
+}
+.tab1-titulo{
+  color:#201e13;
+  margin: 0;
+  margin-left: 5px;
 }
 .toolbar-cabecalho{
    flex-direction: row-reverse; 
 }
-
-.btns-item ion-button:hover{
-  --background: #DACABE;
+.btns{
+  margin-top: 20px;
+  margin: 20px 5px;
+  display: flex;
+  justify-content: space-around;
+  .btns-item{
+    display:flex;
+    flex-direction:column;
+    width: 60px;
+    align-items: center;
+     span{
+       margin-top: 10px;
+      font-size: 13px;
+      font-weight: 500;
+      text-align: center;
+     }
+  }
+}
+.btns-item button{
+  background: #DACABE;
+  width: 55px;
+  height: 55px;
+  border-radius: 5px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 4px 8px 3px rgb(186 186 186 / 82%);
+}
+.btns-item button:hover{
+  background:#e0b99c;
 }
 
-
+.banner{
+  width: 350px;
+  border-radius: 10px;
+  height: 125px;
+  margin: 30px auto;
+}
 
 .pedidos-container{
   width: 290px;
@@ -82,25 +124,7 @@
     border-top: 1px solid var(--ion-color-medium);
     --border-color: var(--ion-color-medium);
   }
-  .btns{
-    margin-top: 20px;
-    margin: 20px 5px;
-    display: flex;
-    .btns-item{
-      display:flex;
-      flex-direction:column;
-      width: 60px;
-      margin-right: 15px;
-      align-items: center;
-       span{
-         margin-top: 5px;
-        font-size: 13px;
-        font-weight: medium;
-        text-align: center;
-       }
-    }
-
-  }
+  
   
   .btns-item ion-button{
     --background: #F5EEE9;
@@ -115,12 +139,7 @@
 }
 
 :host{
-  .banner{
-    --size: 365px;
-    --border-radius:10px;
-    height: 125px;
-    margin: 30px 5px;
-  }
+  
   .mais-pedidos{
     margin:15px 0;
   }

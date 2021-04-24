@@ -36,28 +36,25 @@ ion-content{
       margin-top: 25px;
       width: 100%;
       .btn-entrar{
-        --background: var(--ion-color-primary);
+        background: #d42015;
         width: 120px;
         height: 35px;
-        --border-radius: 20px;
+        border-radius: 20px;
         box-shadow: 0px 2px 5px rgba(94, 93, 93, 0.2);
         font-weight: 500;
         font-size: 14px;
-        color:var(--ion-color-primary-contrast);
+        color:#f5eee9;
       }
-          
+    
       .btn-cadastro{
-        --background: var(--ion-color-secondary);
+        background: #df904d;;
         width: 120px;
         height: 35px;
-        --border-radius: 20px;
+        border-radius: 20px;
         box-shadow: 0px 2px 5px rgba(94, 93, 93, 0.2);
         font-weight: 500;
         font-size: 14px;
-        color:var(--ion-color-primary-contrast);
-        --background-hover: var(--ion-color-secondary-shade);
-        --background-focused: var(--ion-color-secondary-shade);
-        --background-activated: var(--ion-color-secondary-shade);
+        color:#f5eee9;
       }
     }
   }

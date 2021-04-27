@@ -1,111 +1,64 @@
 <ion-header>
-  <div>
+  <ion-toolbar class="header">
+    <div  class="botao-menu">
+      <ion-icon  name="menu-outline" (click)="openCustom()"></ion-icon>
 
-    <div class="cabecalho-itens">
-      <div slot="end" (click)="openCustom()" class='img-profile'>
-        <img [src]="foto">
-      </div>
-      <h1 class="tab1-titulo">{{ name }}</h1>
     </div>
 
-  </div>
+   
+  </ion-toolbar>
  
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content [fullscreen]="false">
    
   <ion-router-outlet id="main"></ion-router-outlet>
 
-  
-  <ion-menu side="start" menuId="custom" contentId="main" class="my-custom-menu">
-    <ion-header>
-      <ion-toolbar>
 
-        <div class="toolbar-cabecalho">
-          <ion-title>
-            {{ name }}
-          </ion-title>
-  
-          <ion-thumbnail slot="end">
-            <img [src]="foto">
-          </ion-thumbnail>
-        </div>
-        
-      </ion-toolbar>
-    </ion-header>
-    <ion-content>
+  <ion-item lines='none' class="endereco">
+    <label for="cars">Endereço:</label>
 
-      <div class="pedidos-container">
-        <ion-text>
-          <h2>Pedidos</h2>
-        </ion-text>
-
-        <ion-row class="pedidos-itens">
-          <ion-col size="8">
-            <div class="pedidos-precos">
-              <div class="pedidos-img">
-                <img src="/assets/pedidos-1.jpg">
-                <div class="overlay"></div>
-              </div>
-              
-              <span>Combo Fast-food</span>
-            </div>
-
-          </ion-col>
-          <ion-col size="4" >
-            <span class="pedidos-preco">19,90</span>
-
-            <ion-button href="#" class="pedidos-btn">Ver Pedido</ion-button>
-          </ion-col>
-        </ion-row>
-
-      </div>
-
-      <ion-list>
-        <ion-item detail lines="full">Chat</ion-item>
-        <ion-item detail lines="full">Lista de endereço</ion-item>
-        <ion-item detail lines="full">Notificações</ion-item>
-        <ion-item detail lines="full">Ajuda</ion-item>
-        <ion-item detail lines="full">Sair</ion-item>
-      </ion-list>
-    </ion-content>
-  </ion-menu>
-  
+    <select name="cars" id="cars">
+      <option value="mercedes">Mercedes,Rua 132</option>
+      <option value="volvo">Volvo,Rua 12</option>
+      <option value="saab">Saab,Rua 245</option>      
+    </select>
+  </ion-item>
   <!-- Navegação Dos Botões -->
   <div class='btns'>
     
     <div class='btns-item'>
-      <button>
+       <ion-button (click)=" bebidasPage()">
         <img src='/assets/bebida.png'>
-      </button>
+      </ion-button>
       <span>Bebidas</span>
     </div>
     
     <div class='btns-item'>
-      <button>
+      <ion-button (click)="pizzaPage()">
         <img src='/assets/pizza.png'>
-      </button>
+      </ion-button>
       <span>Pizzas</span>
     </div>
 
     <div class='btns-item'>
-      <button>
+      <ion-button (click)="hamburguePage()">
         <img src='/assets/hamburger.png'>
-      </button>
-      <span>Hamburgers</span>
+      </ion-button>
+      <span>Hamburguers</span>
     </div>
 
     <div class='btns-item'>
-      <button>
+      <ion-button (click)="fastfoodPage()">
         <img src='/assets/comida-de-rua.png'>
-      </button>
-      <span>Comidas de Rua</span>
+      </ion-button>
+      <span>Fastfood</span>
     </div>
 
     <div class='btns-item'>
-      <button>
+      <ion-button (click)="churrascoPage()">
         <img src='/assets/churrasco.png'>
-      </button>
+      </ion-button>
       <span>Churrasco</span>
     </div>
   </div>
@@ -138,8 +91,6 @@
       </ion-slides>  
 
   </div>
-
-
 
   
 </ion-content>

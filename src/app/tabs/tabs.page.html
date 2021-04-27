@@ -1,4 +1,4 @@
-<ion-tabs>
+<ion-tabs (click)="closeCustom()">
 
   <ion-tab-bar slot="bottom">
     <ion-tab-button tab="tab1">
@@ -24,3 +24,43 @@
   </ion-tab-bar>
 
 </ion-tabs>
+
+
+
+<ion-menu side="start" menuId="menu-global" contentId="main" class="my-custom-menu">
+
+  <ion-content>
+
+    <div class="pedidos-container">
+    
+      <ion-row class="pedidos-itens">
+        <ion-col size="12">
+          <div class="pedidos-precos">
+            <div class="img-sidemenu"> 
+              <img [src]="foto">
+            </div>
+            
+            <h3 style="margin: auto;">{{name}}</h3>
+          </div>
+
+        </ion-col>
+      
+      </ion-row>
+
+    </div>
+
+    <ul class="lista-menu">
+      <li button (click)="pizzaPage()"><ion-icon slot="start" name="person-outline"></ion-icon> Perfil</li>
+      <li button (click)="ederecoPage()"><ion-icon name="location-outline"></ion-icon>Lista de endereço</li>
+      <li (click)="addFormadePagamento()"><ion-icon name="wallet-outline"></ion-icon>Forma de Pagamento</li>
+
+      <li button (click)="notificationPage()"><ion-icon name="notifications-outline"></ion-icon>Notificações</li>
+      <li button (click)="ajuda()"><ion-icon name="help-outline"></ion-icon>Ajuda</li>
+      <li button (click)="sair()"><ion-icon name="exit-outline"></ion-icon>Sair</li>
+    </ul>
+
+    <br>
+    <br> 
+    <p class="version-text">Versão: 1.0.0</p>
+  </ion-content>
+</ion-menu>

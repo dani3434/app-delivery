@@ -29,3 +29,61 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap');
 
 
+
+ion-alert:not(.select-alert) {
+    --background: #222428;
+    --ion-text-color: white;
+
+    button {
+        color: white !important;
+        font-size: 20px !important;
+    }
+
+    .alert-message {
+        color: #ddd;
+    }
+}
+
+
+
+.img-sidemenu{
+    position: relative;
+    width: 68px;
+    height: 60px;
+    margin: auto;
+  
+  }
+
+  
+.version-text{
+    color: red; 
+    margin-left: 30%;
+   }
+
+
+.pedidos-container{
+    width: 290px;
+    margin: 0 5px;
+    h2{
+      font-weight: bold;
+      font-size: 17px;
+    }
+  }
+
+  .display-nome{
+    margin: auto;
+  }
+
+  .pedidos-precos{
+    display: flex;  
+    span{
+      font-size: 12px;
+      font-weight: bold;  
+      margin-left: 10px;
+    }
+  }
+
+  .pedidos-itens{
+    margin-bottom: 20px;  
+  }
+  

@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Ajuda</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <br>
+  <br>
+
+
+  <ion-item>
+    <ion-label  position="floating">Titulo: </ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+
+  <br><br>
+
+  <ion-item>
+    <ion-label>Qual Problema?</ion-label>
+    <ion-select  interface="action-sheet" placeholder="Selecionar">
+      <ion-select-option value="1">Entregador não chegou.</ion-select-option>
+      <ion-select-option value="2">Meu pedido veio errado.</ion-select-option>
+      <ion-select-option value="3">Relatar um Problema no App.</ion-select-option>
+      <ion-select-option value="4">Reclamação de atendimento.</ion-select-option>
+      <ion-select-option value="5">Cobraça no cartão indevida.</ion-select-option>
+      <ion-select-option value="6">Houve um problema com entregador.</ion-select-option>
+      <ion-select-option value="7">Preciso de um reembolso.</ion-select-option>
+
+    </ion-select>
+  </ion-item>
+
+
+  <br> <br>
+  <ion-item>
+    <ion-label position="floating">Descreva seu problema :</ion-label>
+    <ion-textarea rows="6" cols="20" placeholder=""></ion-textarea>
+  </ion-item>
+
+<br>
+<br>
+  <ion-button color="success" expand="full">Enviar para suporte</ion-button>
+
+
+</ion-content>

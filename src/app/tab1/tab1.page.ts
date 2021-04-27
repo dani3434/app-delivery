@@ -23,6 +23,7 @@ export class Tab1Page implements OnInit{
   constructor(
     private router : Router,
      private webservice : AppDeliveryService,
+     private nav : Router,
      private menu: MenuController) {
 
   }
@@ -37,8 +38,8 @@ export class Tab1Page implements OnInit{
       }else{
 
         this.router.navigateByUrl('', { skipLocationChange: false }).then(() => {
-          location.reload();
-          this.router.navigate(['home']);
+          
+          this.router.navigate(['']);
           
       }); 
      
@@ -46,15 +47,39 @@ export class Tab1Page implements OnInit{
 
   }
      
-    
 
-  openCustom() {
-    this.menu.enable(true, 'custom');
-    this.menu.open('custom');
+
+  bebidasPage(){
+    this.nav.navigate(["bebidas"])
   }
 
   
+  pizzaPage(){
+    this.nav.navigate(["pizza-list"])
+  }
 
+
+  
+  hamburguePage(){
+    this.nav.navigate(["hamburguer-list"])
+  }
+
+
+  
+  fastfoodPage(){
+    this.nav.navigate(["fast-food-list"])
+  }
+
+  
+  churrascoPage(){
+    this.nav.navigate(["churrasco-list"])
+  }
+
+
+  openCustom() {
+    this.menu.enable(true, 'menu-global');
+    this.menu.open('menu-global');
+  }
 
   
 

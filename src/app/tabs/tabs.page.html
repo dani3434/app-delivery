@@ -50,12 +50,13 @@
     </div>
 
     <ul class="lista-menu">
-      <li>Perfil</li>
-      <li>Lista de endereço</li>
-      <li>Notificações</li>
-      <li>Favoritos</li>
-      <li>Ajuda</li>
-      <li>Sair</li>
+      <li button (click)="pizzaPage()"><ion-icon slot="start" name="person-outline"></ion-icon> Perfil</li>
+      <li button (click)="ederecoPage()"><ion-icon name="location-outline"></ion-icon>Lista de endereço</li>
+      <li (click)="addFormadePagamento()"><ion-icon name="wallet-outline"></ion-icon>Forma de Pagamento</li>
+
+      <li button (click)="notificationPage()"><ion-icon name="notifications-outline"></ion-icon>Notificações</li>
+      <li button (click)="ajuda()"><ion-icon name="help-outline"></ion-icon>Ajuda</li>
+      <li button (click)="sair()"><ion-icon name="exit-outline"></ion-icon>Sair</li>
     </ul>
 
     <br>

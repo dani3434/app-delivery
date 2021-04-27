@@ -1,9 +1,153 @@
 <ion-header>
+
   <ion-toolbar>
-    <ion-title>fastFoodList</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Fastfood</ion-title>
   </ion-toolbar>
+
 </ion-header>
 
 <ion-content>
+  <ion-fab vertical="top" edge horizontal="end" slot="fixed">
+    <ion-fab-button (click)="carrinhoPage()">
+      <ion-badge color="success">5</ion-badge>
+      <ion-icon name="cart-outline"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+  <br>
+  <br>
+  <br>
+  <br>
+
+
+  <ion-list>
+     
+    <ion-list-header>
+      <ion-label>Salgados</ion-label>
+    </ion-list-header>
+   
+      <ion-item-sliding>
+      <ion-item button>
+      
+        <ion-thumbnail slot="start">
+        <img src="/assets/cardapio/fastfood/coxinha.jpg">
+      </ion-thumbnail>
+      <ion-label>Coxinha Frango</ion-label>
+      <ion-label  slot="end">$5.50</ion-label>
+      <ion-button slot="end"> 
+        <ion-icon name="cart-outline"></ion-icon>
+      </ion-button>
+    </ion-item>
+    <ion-item-options side="end">
+      <ion-item-option>Remover</ion-item-option>
+    </ion-item-options>
+ </ion-item-sliding>
+
+
+    <ion-item-sliding>
+      <ion-item button>
+
+      <ion-thumbnail slot="start">
+        <img src="/assets/cardapio/fastfood/espetinho-carne.jpg">
+      </ion-thumbnail>
+      <ion-label>Espetinho de Carne</ion-label>
+      <ion-label  slot="end">$5.50</ion-label>
+      <ion-button slot="end"> 
+        <ion-icon name="cart-outline"></ion-icon>
+      </ion-button>
+    </ion-item>
+    <ion-item-options side="end">
+      <ion-item-option>Remover</ion-item-option>
+    </ion-item-options>
+
+</ion-item-sliding>
+
+
+
+<ion-item-sliding>
+  <ion-item button>
+
+  <ion-thumbnail slot="start">
+    <img src="/assets/cardapio/fastfood/fritas.jpg">
+  </ion-thumbnail>
+  <ion-label>Batata Fritas</ion-label>
+  <ion-label  slot="end">$5.50</ion-label>
+  <ion-button slot="end"> 
+    <ion-icon name="cart-outline"></ion-icon>
+  </ion-button>
+</ion-item>
+<ion-item-options side="end">
+  <ion-item-option>Remover</ion-item-option>
+</ion-item-options>
+
+</ion-item-sliding>
+
+    <ion-item-sliding>
+    <ion-item button>
+      <ion-thumbnail slot="start">
+        <img src="/assets/cardapio/fastfood/cachorro-quente.jpg">
+      </ion-thumbnail>
+      <ion-label>Cachorro quente</ion-label>
+      <ion-label  slot="end">$5.50</ion-label>
+      <ion-button slot="end"> 
+        <ion-icon name="cart-outline"></ion-icon>
+      </ion-button>
+    </ion-item>
+
+    <ion-item-options side="end">
+      <ion-item-option>Remover</ion-item-option>
+    </ion-item-options>
+  </ion-item-sliding>
+
+  </ion-list>
+  
+  <ion-list>
+    
+    <ion-list-header>
+      <ion-label>Sobremesas Doces</ion-label>
+    </ion-list-header>
+ 
+    
+    <ion-item-sliding>
+    <ion-item button>
+      <ion-thumbnail slot="start">
+        <img src="/assets/cardapio/fastfood/churros.jpg">
+      </ion-thumbnail>
+      <ion-label>Churros Unidade </ion-label>
+      <ion-label  slot="end">$5.50</ion-label>
+    
+      <ion-button slot="end"> 
+        <ion-icon name="cart-outline"></ion-icon>
+      </ion-button>
+
+    </ion-item>
+    <ion-item-options side="end">
+      <ion-item-option>Remover</ion-item-option>
+    </ion-item-options>
+ </ion-item-sliding>
+ 
+    <ion-item-sliding>
+      <ion-item button>
+
+      <ion-thumbnail slot="start">
+        <img src="/assets/cardapio/fastfood/sorvete.jpg">
+      </ion-thumbnail>
+      <ion-label>Sorvete </ion-label>
+      <ion-label  slot="end">$5.50</ion-label>
+      <ion-button slot="end"> 
+        <ion-icon name="cart-outline"></ion-icon>
+      </ion-button>
+    </ion-item>
+    <ion-item-options side="end">
+      <ion-item-option>Remover</ion-item-option>
+    </ion-item-options>
+</ion-item-sliding>
+
+
+  </ion-list>
+
 
 </ion-content>

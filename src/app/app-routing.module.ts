@@ -17,7 +17,8 @@ const routes: Routes = [
   {
     path: 'cadastro',
     loadChildren: () => import('./cadastro/cadastro.module').then( m => m.CadastroPageModule)
-  },  {
+  },
+  {
     path: 'tab4',
     loadChildren: () => import('./tab4/tab4.module').then( m => m.Tab4PageModule)
   },
@@ -60,6 +61,26 @@ const routes: Routes = [
   {
     path: 'churrasco-list',
     loadChildren: () => import('./template/churrasco-list/churrasco-list.module').then( m => m.ChurrascoListPageModule)
+  },
+  {
+    path: 'perfil-page',
+    loadChildren: () => import('./template/perfil-page/perfil-page.module').then( m => m.PerfilPagePageModule)
+  },
+  {
+    path: 'carrinho',
+    loadChildren: () => import('./template/carrinho/carrinho.module').then( m => m.CarrinhoPageModule)
+  },
+  {
+    path: 'historico-pedidos',
+    loadChildren: () => import('./template/historico-pedidos/historico-pedidos.module').then( m => m.HistoricoPedidosPageModule)
+  },
+  {
+    path: 'adicionar-formade-pagamento',
+    loadChildren: () => import('./template/adicionar-formade-pagamento/adicionar-formade-pagamento.module').then( m => m.AdicionarFormadePagamentoPageModule)
+  },
+  {
+    path: 'cumpom-page',
+    loadChildren: () => import('./template/cumpom-page/cumpom-page.module').then( m => m.CumpomPagePageModule)
   }
 
 ];

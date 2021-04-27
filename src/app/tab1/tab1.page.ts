@@ -2,8 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { AppDeliveryService } from '../services/app-delivery.service';
 import { app } from 'firebase';
 import { Router } from '@angular/router';
-import { MenuController, NavController } from '@ionic/angular';
-import { BebidasPage } from '../template/bebidas/bebidas.page';
+import { MenuController } from '@ionic/angular';
 
 
 @Component({
@@ -24,7 +23,7 @@ export class Tab1Page implements OnInit{
   constructor(
     private router : Router,
      private webservice : AppDeliveryService,
-     private nav : NavController,
+     private nav : Router,
      private menu: MenuController) {
 
   }
@@ -49,6 +48,32 @@ export class Tab1Page implements OnInit{
   }
      
 
+
+  bebidasPage(){
+    this.nav.navigate(["bebidas"])
+  }
+
+  
+  pizzaPage(){
+    this.nav.navigate(["pizza-list"])
+  }
+
+
+  
+  hamburguePage(){
+    this.nav.navigate(["hamburguer-list"])
+  }
+
+
+  
+  fastfoodPage(){
+    this.nav.navigate(["fast-food-list"])
+  }
+
+  
+  churrascoPage(){
+    this.nav.navigate(["churrasco-list"])
+  }
 
 
   openCustom() {

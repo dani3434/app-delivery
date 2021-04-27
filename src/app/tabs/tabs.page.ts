@@ -45,7 +45,37 @@ export class TabsPage {
      
     }
   }
+
   
+  
+  pizzaPage(){
+    this.router.navigate(["perfil-page"])
+  }
+  
+  notificationPage(){
+    this.router.navigate(["notification"])
+  }
+
+  
+  ederecoPage(){
+    this.router.navigate(["endereco-menu"])
+  }
+
+  
+  ajuda(){
+    this.router.navigate(["ajuda-menu"])
+  }
+
+  
+  addFormadePagamento(){
+    this.router.navigate(["adicionar-formade-pagamento"])
+  }
+
+  sair(){
+    // logout
+    alert("falta desenvolver sair menu")
+  }
+
 
   OpenCustom() {
     this.menu.enable(true, 'menu-global');

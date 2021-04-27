@@ -1,10 +1,10 @@
 <ion-header>
   <ion-toolbar class="header">
-    <ion-title class="botao-menu">
-  
-      <ion-icon name="menu-outline" (click)="openCustom()"></ion-icon>
-    
-    </ion-title>
+    <div  class="botao-menu">
+      <ion-icon  name="menu-outline" (click)="openCustom()"></ion-icon>
+
+    </div>
+
    
   </ion-toolbar>
  
@@ -28,35 +28,35 @@
   <div class='btns'>
     
     <div class='btns-item'>
-       <ion-button  href="/bebidas" routerDirection="backward">
+       <ion-button (click)=" bebidasPage()">
         <img src='/assets/bebida.png'>
       </ion-button>
       <span>Bebidas</span>
     </div>
     
     <div class='btns-item'>
-      <ion-button>
+      <ion-button (click)="pizzaPage()">
         <img src='/assets/pizza.png'>
       </ion-button>
       <span>Pizzas</span>
     </div>
 
     <div class='btns-item'>
-      <ion-button>
+      <ion-button (click)="hamburguePage()">
         <img src='/assets/hamburger.png'>
       </ion-button>
-      <span>Hamburgers</span>
+      <span>Hamburguers</span>
     </div>
 
     <div class='btns-item'>
-      <ion-button>
+      <ion-button (click)="fastfoodPage()">
         <img src='/assets/comida-de-rua.png'>
       </ion-button>
-      <span>Comidas de Rua</span>
+      <span>Fastfood</span>
     </div>
 
     <div class='btns-item'>
-      <ion-button>
+      <ion-button (click)="churrascoPage()">
         <img src='/assets/churrasco.png'>
       </ion-button>
       <span>Churrasco</span>

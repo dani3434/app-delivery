@@ -1,9 +1,134 @@
 <ion-header>
+
   <ion-toolbar>
-    <ion-title>hamburguerList</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Hamburguer's</ion-title>
   </ion-toolbar>
+
 </ion-header>
 
 <ion-content>
+  <ion-fab vertical="top" edge horizontal="end" slot="fixed">
+    <ion-fab-button (click)="carrinhoPage()">
+      <ion-badge color="success">5</ion-badge>
+      <ion-icon name="cart-outline"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+  <br>
+  <br>
+  <br>
+  <br>
+
+
+  <ion-list>
+     
+    <ion-list-header>
+      <ion-label>Hamburguer Unidade</ion-label>
+    </ion-list-header>
+   
+      <ion-item-sliding>
+      <ion-item button>
+      
+        <ion-thumbnail slot="start">
+        <img src="/assets/cardapio/hamburguers/hambuergur-bacon-ovos.jpg">
+      </ion-thumbnail>
+      <ion-label>Ovos e Bacon </ion-label>
+      <ion-label  slot="end">$5.50</ion-label>
+      <ion-button slot="end"> 
+        <ion-icon name="cart-outline"></ion-icon>
+      </ion-button>
+    </ion-item>
+    <ion-item-options side="end">
+      <ion-item-option>Remover</ion-item-option>
+    </ion-item-options>
+ </ion-item-sliding>
+
+
+    <ion-item-sliding>
+      <ion-item button>
+
+      <ion-thumbnail slot="start">
+        <img src="/assets/cardapio/hamburguers/bacon-ovos-mexidos.jpg">
+      </ion-thumbnail>
+      <ion-label>Bacon e Ovos Mexidos</ion-label>
+      <ion-label  slot="end">$5.50</ion-label>
+      <ion-button slot="end"> 
+        <ion-icon name="cart-outline"></ion-icon>
+      </ion-button>
+    </ion-item>
+    <ion-item-options side="end">
+      <ion-item-option>Remover</ion-item-option>
+    </ion-item-options>
+
+</ion-item-sliding>
+
+
+    <ion-item-sliding>
+    <ion-item button>
+      <ion-thumbnail slot="start">
+        <img src="/assets/cardapio/hamburguers/hamburguer-glaceado.jpg">
+      </ion-thumbnail>
+      <ion-label>Hamburguer Glaceado</ion-label>
+      <ion-label  slot="end">$5.50</ion-label>
+      <ion-button slot="end"> 
+        <ion-icon name="cart-outline"></ion-icon>
+      </ion-button>
+    </ion-item>
+
+    <ion-item-options side="end">
+      <ion-item-option>Remover</ion-item-option>
+    </ion-item-options>
+  </ion-item-sliding>
+
+  </ion-list>
+  
+  <ion-list>
+    
+    <ion-list-header>
+      <ion-label>Combos +Refrigerente + Batatas Fritas </ion-label>
+    </ion-list-header>
+ 
+    
+    <ion-item-sliding>
+    <ion-item button>
+      <ion-thumbnail slot="start">
+        <img src="/assets/cardapio/hamburguers/combo-guarana.png">
+      </ion-thumbnail>
+      <ion-label>Combo Guaraná  </ion-label>
+      <ion-label  slot="end">$5.50</ion-label>
+    
+      <ion-button slot="end"> 
+        <ion-icon name="cart-outline"></ion-icon>
+      </ion-button>
+
+    </ion-item>
+    <ion-item-options side="end">
+      <ion-item-option>Remover</ion-item-option>
+    </ion-item-options> 
+ </ion-item-sliding>
+ 
+    <ion-item-sliding>
+      <ion-item button>
+
+      <ion-thumbnail slot="start">
+        <img src="/assets/cardapio/hamburguers/baconcocafritas_neemo.jpg">
+      </ion-thumbnail>
+      <ion-label>Batata Fritas + Hamburguers + Coca</ion-label>
+      <ion-label  slot="end">$5.50</ion-label>
+      <ion-button slot="end"> 
+        <ion-icon name="cart-outline"></ion-icon>
+      </ion-button>
+    </ion-item>
+    <ion-item-options side="end">
+      <ion-item-option>Remover</ion-item-option>
+    </ion-item-options>
+</ion-item-sliding>
+
+
+  </ion-list>
+
 
 </ion-content>

@@ -2,12 +2,133 @@
 
   <ion-toolbar>
     <ion-buttons slot="start">
-      <ion-back-button></ion-back-button>
-   </ion-buttons>
-    <ion-title>bebidas</ion-title>
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Bebidas</ion-title>
   </ion-toolbar>
+
 </ion-header>
 
 <ion-content>
+  <ion-fab vertical="top" edge horizontal="end" slot="fixed">
+    <ion-fab-button (click)="carrinhoPage()">
+      <ion-badge color="success">5</ion-badge>
+      <ion-icon name="cart-outline"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+  <br>
+  <br>
+  <br>
+  <br>
+
+
+  <ion-list>
+     
+    <ion-list-header>
+      <ion-label>Bebidas Alcolicas </ion-label>
+    </ion-list-header>
+   
+      <ion-item-sliding>
+      <ion-item (click)="addItem()" button>
+      
+        <ion-thumbnail slot="start">
+        <img src="/assets/cardapio/bebidas/coca-cola-2-litros.jpg">
+      </ion-thumbnail>
+      <ion-label>Coca Cola 2 litros </ion-label>
+      <ion-label  slot="end">$5.50</ion-label>
+      <ion-button slot="end"> 
+        <ion-icon name="cart-outline"></ion-icon>
+      </ion-button>
+    </ion-item>
+    <ion-item-options side="end">
+      <ion-item-option>Remover</ion-item-option>
+    </ion-item-options>
+ </ion-item-sliding>
+
+
+    <ion-item-sliding>
+      <ion-item button>
+
+      <ion-thumbnail slot="start">
+        <img src="/assets/cardapio/bebidas/Refrigerante-Guaraná-Antarctica-2l.jpg">
+      </ion-thumbnail>
+      <ion-label>Guaraná Antartica</ion-label>
+      <ion-label  slot="end">$5.50</ion-label>
+      <ion-button slot="end"> 
+        <ion-icon name="cart-outline"></ion-icon>
+      </ion-button>
+    </ion-item>
+    <ion-item-options side="end">
+      <ion-item-option>Remover</ion-item-option>
+    </ion-item-options>
+
+</ion-item-sliding>
+
+
+    <ion-item-sliding>
+    <ion-item button>
+      <ion-thumbnail slot="start">
+        <img src="/assets/cardapio/bebidas/refrigerante-fanta-laranja.jpg">
+      </ion-thumbnail>
+      <ion-label>Fanta Laranja</ion-label>
+      <ion-label  slot="end">$5.50</ion-label>
+      <ion-button slot="end"> 
+        <ion-icon name="cart-outline"></ion-icon>
+      </ion-button>
+    </ion-item>
+
+    <ion-item-options side="end">
+      <ion-item-option>Remover</ion-item-option>
+    </ion-item-options>
+  </ion-item-sliding>
+
+  </ion-list>
+  
+  <ion-list>
+    
+    <ion-list-header>
+      <ion-label>Bebidas Alcolicas </ion-label>
+    </ion-list-header>
+ 
+    
+    <ion-item-sliding>
+    <ion-item button>
+      <ion-thumbnail slot="start">
+        <img src="/assets/cardapio/bebidas/cerveja-heineken.jpg">
+      </ion-thumbnail>
+      <ion-label>Cerveja Heneken  </ion-label>
+      <ion-label  slot="end">$5.50</ion-label>
+    
+      <ion-button slot="end"> 
+        <ion-icon name="cart-outline"></ion-icon>
+      </ion-button>
+
+    </ion-item>
+    <ion-item-options side="end">
+      <ion-item-option>Remover</ion-item-option>
+    </ion-item-options>
+ </ion-item-sliding>
+ 
+    <ion-item-sliding>
+      <ion-item button>
+
+      <ion-thumbnail slot="start">
+        <img src="/assets/cardapio/bebidas/brahma.jpg">
+      </ion-thumbnail>
+      <ion-label>Cerveja Brahma</ion-label>
+      <ion-label  slot="end">$5.50</ion-label>
+      <ion-button slot="end"> 
+        <ion-icon name="cart-outline"></ion-icon>
+      </ion-button>
+    </ion-item>
+    <ion-item-options side="end">
+      <ion-item-option>Remover</ion-item-option>
+    </ion-item-options>
+</ion-item-sliding>
+
+
+  </ion-list>
+
 
 </ion-content>

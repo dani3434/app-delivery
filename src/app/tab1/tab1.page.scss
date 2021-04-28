@@ -1,7 +1,6 @@
 
 .header-ios ion-toolbar:last-of-type {
   --border-width: 0;
-  // box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
 }
 .header{
   border-bottom: 2px solid #cacaca;
@@ -13,7 +12,7 @@
   padding: 5px 0px;
   label{
    color:#201e13;
-   font-weight: 500;
+   font-weight: bold;
   }
   select{
    border: 2px solid #201e13;
@@ -60,7 +59,7 @@
   }
 }
 .btns-item button{
-  background: #DACABE;
+  background: linear-gradient(to right, #f00000, #d42015);
   width: 55px;
   height: 55px;
   border-radius: 5px;
@@ -122,17 +121,6 @@
   ion-item:first-child{
     border-top: 1px solid var(--ion-color-medium);
     --border-color: var(--ion-color-medium);
-  }
-  
-  
-  .btns-item ion-button{
-    --background: #F5EEE9;
-    width: 60px;
-    height: 60px;
-    border-radius: 10px;
-  }
-  .btns-item ion-button:hover{
-    --background: #DACABE;
   }
   
 }

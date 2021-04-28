@@ -7,8 +7,15 @@ ion-tabs{
   padding: 0;
   li{
     padding-left: 15px;
-    padding: 10px;
+    padding: 15px 10px;
     border-top: 2px solid #cacaca;
+    display: flex;
+    align-items: center;
+    ion-icon{
+      width: 1.2em;
+      height: 1.2em;
+      margin-right: 8px;
+    }
   }
   li:hover{
     background: rgba(210, 210, 210, 0.4);
@@ -19,17 +26,7 @@ ion-tabs{
   }
 }
 :host {
-  // ion-item{
-  //   --border-color: var(--ion-color-medium);
-  // }
-  // ion-item:hover{
-  //   --background: rgba(210, 210, 210, 0.4);
-  // }
-  // ion-item:first-child{
-  //   border-top: 1px solid var(--ion-color-medium);
-  //   --border-color: var(--ion-color-medium);
-  // }
-  
+
   
   .btns-item ion-button{
     --background: #F5EEE9;

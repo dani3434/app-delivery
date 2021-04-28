@@ -1,0 +1,43 @@
+.header-ios ion-toolbar:last-of-type {
+  --border-width: 0;
+}
+ion-toolbar{
+  border-bottom: 2px solid #cacaca;
+  ion-back-button{
+    font-weight: bold;
+    font-size: 15px;
+  }
+}
+.pedidos-container{
+  margin: 10px auto;
+}
+.pedidos-precos{
+  display: flex;
+  flex-direction: column;
+  .img-sidemenu{
+    margin-bottom: 15px;
+    margin-top: 10px;
+  }
+  h3{
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+}
+
+.perfil-cadastro{
+  width: 320px;
+  margin: 0 auto;
+  label{
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    display: block;
+  }
+  input{
+    border: 2px solid #cacaca;
+    width: 100%;
+    background: #f5f4f4;
+    padding: 10px;
+    border-radius: 5px;
+  }
+}

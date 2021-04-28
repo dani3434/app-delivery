@@ -1,0 +1,10 @@
+.header-ios ion-toolbar:last-of-type {
+  --border-width: 0;
+}
+ion-toolbar{
+  border-bottom: 2px solid #cacaca;
+  ion-back-button{
+    font-weight: bold;
+    font-size: 15px;
+  }
+}

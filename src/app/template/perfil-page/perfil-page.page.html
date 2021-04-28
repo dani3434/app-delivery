@@ -1,9 +1,10 @@
 <ion-header>
   <ion-toolbar>
     <ion-buttons slot="start">
-      <ion-back-button defaultHref="home"></ion-back-button>
+      <ion-back-button text="Voltar" defaultHref="home">
+      </ion-back-button>
     </ion-buttons>
-    <ion-title>perfilPage</ion-title>
+    <ion-title>Perfil</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -29,47 +30,43 @@
 
   </div>
 
-  <ion-item>
-    <ion-label position="floating">Nome :</ion-label>
-    <ion-input type="text" value="{{name}}" ></ion-input>
-  </ion-item>
-
-  <ion-item>
-    <ion-label position="floating">Numero de telefone :</ion-label>
-    <ion-input type="text" value="" ></ion-input>
-  </ion-item>
-
-  <ion-item>
-    <ion-label>Foto Perfil</ion-label>
-    <ion-select  interface="action-sheet" placeholder="Escolha foto perfil">
-
-      <ion-select-option value="red">
-        <ion-item>
+  <form class="perfil-cadastro">
+    <label for="fname">Nome :</label>
+    <input type="text" value="{{name}}">
+    <br>
+    <br>
+    <label for="lname">Numero de telefone :</label>
+    <input type="text">
+    <br>
+    <br>
+    <ion-item>
+      <ion-label>Foto Perfil</ion-label>
+      <ion-select  interface="action-sheet" placeholder="Escolha foto perfil">
+  
+        <ion-select-option value="red">
+          <ion-item>
+            <ion-thumbnail slot="start">
+              <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+            </ion-thumbnail>
+            <ion-label>Item Thumbnail</ion-label>
+          </ion-item>
+       
+   
+        </ion-select-option>
+        <ion-select-option value="purple">
           <ion-thumbnail slot="start">
             <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
           </ion-thumbnail>
-          <ion-label>Item Thumbnail</ion-label>
-        </ion-item>
-     
- 
-      </ion-select-option>
-      <ion-select-option value="purple">
-        <ion-thumbnail slot="start">
-          <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
-        </ion-thumbnail>
-        <ion-item>
-         
-          <ion-label>Item Thumbnail</ion-label>
-        </ion-item>
+          <ion-item>
+            <ion-label>Item Thumbnail</ion-label>
+          </ion-item>
+   
+        </ion-select-option>
+        <ion-select-option value="yellow">Yellow</ion-select-option>
+        <ion-select-option value="orange">Orange</ion-select-option>
+        <ion-select-option value="green">Green</ion-select-option>
+      </ion-select>
+    </ion-item>
+  </form>
   
- 
-      </ion-select-option>
-      <ion-select-option value="yellow">Yellow</ion-select-option>
-      <ion-select-option value="orange">Orange</ion-select-option>
-      <ion-select-option value="green">Green</ion-select-option>
-    </ion-select>
-  </ion-item>
-
-  <br>
-  <br> 
 </ion-content>

@@ -1,0 +1,29 @@
+
+<ion-content>
+
+  <ion-item-group>
+    <ion-item  lines="none" >
+      <ion-img src="/assets/camera.png"></ion-img>
+    </ion-item>
+    
+    <ion-input  [(ngModel)]="nome" placeholder='Nome de usuário'  required></ion-input>
+
+    <ion-input   [(ngModel)]="email" placeholder='Email'  required></ion-input>
+
+    <ion-input  [(ngModel)]="senha"  type="password" required placeholder='Senha'></ion-input>
+    
+    <ion-button type="submit" expand="block" class="btn-entrar" (click)="cadastroUsuario()">Cadastrar</ion-button>
+
+    <hr>
+
+    <ion-button expand="block" class="btn-facebook">
+      <div class="face-logo">
+        <img src='/assets/Facebook-logo.png'>
+      </div>
+      Cadastrar Com Facebook
+    </ion-button>
+    
+    <p>Já tem uma Conta? <span class="call" routerLink="/login" routerDirection="root">Entrar</span></p>
+  </ion-item-group>  
+
+</ion-content>

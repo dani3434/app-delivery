@@ -1,0 +1,79 @@
+ion-content{
+  --background: url('/assets/bg.jpg') no-repeat center center / cover;
+  
+  ion-item-group{
+    max-width: 300px;
+    margin: 40px auto;
+    ion-item {
+      --background: none;
+      ion-img{
+        width:70px;
+        height: 70px;
+        text-align: center;
+        margin: 0 auto;
+      }
+    }
+    h1{
+      text-align:center;
+      font-family: Quicksand;
+      font-weight: bold;
+      font-size: 48px;
+      line-height: 115.2%;
+      color: var(--ion-color-primary-contrast);
+      margin-bottom: 30px;
+    }
+  
+    ion-input{
+      --background: var(--ion-color-primary-contrast);
+      border-radius: 20px;
+      --padding-start: 15px;
+      --color: var(--ion-color-step-200);
+      --placeholder-font-weight: medium;
+      font-size: 14px;
+      --padding-top: 13px;
+      --padding-bottom: 13px;
+      margin-bottom: 15px;
+      width: 100%;
+      box-shadow: 0px 2px 5px rgba(94, 93, 93, 0.2);
+    }
+    .btn-entrar{
+      --border-radius: 20px;
+      margin-top: 30px;
+      box-shadow: 0px 2px 5px rgba(94, 93, 93, 0.2);
+      font-size: 14px;
+      height:40px;
+    } 
+    hr{
+      background: var(--ion-color-primary-contrast);
+      height: 1px;
+      margin-top: 40px;
+    }
+    
+    .btn-facebook{
+      height:40px;
+      font-size: 14px;
+      --border-radius: 20px;
+       margin-top: 30px;
+       --background: #4267B2;
+       --background-hover: #1f396d;
+       --background-activated: #1f396d;
+       --background-focused: #1f396d;
+       box-shadow: 0px 2px 5px rgba(94, 93, 93, 0.2);
+       .face-logo{
+        width: 45px;
+      }
+    }
+    p{
+      font-size: 14px;
+      text-align: center;
+      margin-top: 30px;
+      color: var(--ion-color-primary-contrast);
+      .call{
+        color: var(--ion-color-primary);
+        font-weight: bold;
+        cursor: pointer;
+        text-decoration:underline ;
+      }
+   }
+  }  
+}

@@ -1,0 +1,98 @@
+<ion-header>
+  <ion-toolbar class="header">
+    <div  class="botao-menu">
+      <ion-icon  name="menu-outline" (click)="openCustom()"></ion-icon>
+
+    </div>
+
+   
+  </ion-toolbar>
+ 
+</ion-header>
+
+<ion-content [fullscreen]="true">
+   
+  <ion-router-outlet id="main"></ion-router-outlet>
+
+  <ion-button fill="light">
+  <ul class="lista-menu">
+  
+      <li (click)="ederecoPage()">
+        <ion-icon slot="start" name="chevron-down-outline"></ion-icon>
+        Rua dos bobos numero 001 A  abc jht afftre
+    </li>
+
+  
+  </ul>
+</ion-button>
+
+  <!-- Navegação Dos Botões -->
+  <div class='btns'>
+    
+    <div class='btns-item'>
+      <ion-button (click)="pizzaPage()">
+        <img src='/assets/pizza.png'>
+      </ion-button>
+      <span>Pizzas</span>
+    </div>
+
+    <div class='btns-item'>
+      <ion-button (click)="hamburguePage()">
+        <img src='/assets/hamburger.png'>
+      </ion-button>
+      <span>Hamburguers</span>
+    </div>
+
+    <div class='btns-item'>
+      <ion-button (click)="fastfoodPage()">
+        <img src='/assets/comida-de-rua.png'>
+      </ion-button>
+      <span>Fastfood</span>
+    </div>
+
+    <div class='btns-item'>
+      <ion-button (click)=" bebidasPage()">
+       <img src='/assets/bebida.png'>
+     </ion-button>
+     <span>Bebidas</span>
+   </div>
+
+    <div class='btns-item'>
+      <ion-button (click)="churrascoPage()">
+        <img src='/assets/churrasco.png'>
+      </ion-button>
+      <span>Churrasco</span>
+    </div>
+  </div>
+  
+  <div class="banner"> 
+    <img src="/assets/banner.jpg"/>
+  </div>
+
+  <div class="mais-pedidos">
+    <h2>Mais Pedidos</h2>
+      <ion-slides>
+        
+        <ion-slide>
+         
+            <img class="img-slid" src="/assets/slider-img-1.png"/>
+            <img class="img-slid" src="/assets/slider-img-2.png"/>
+            <img class="img-slid" src="/assets/slider-img-3.png"/>
+
+        </ion-slide>
+
+
+        <ion-slide>
+          <img class="img-slid" src="/assets/slider-img-1.png"/>
+          <img class="img-slid" src="/assets/slider-img-2.png"/>
+          <img class="img-slid" src="/assets/slider-img-1.png"/>
+
+        </ion-slide>
+
+        
+      </ion-slides>  
+
+  </div>
+
+  
+</ion-content>

@@ -1,0 +1,89 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import '~@ionic/angular/css/display.css';
+
+/* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+
+// Font
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap');
+
+
+
+ion-alert:not(.select-alert) {
+    --background: #222428;
+    --ion-text-color: white;
+
+    button {
+        color: white !important;
+        font-size: 20px !important;
+    }
+
+    .alert-message {
+        color: #ddd;
+    }
+}
+
+
+
+.img-sidemenu{
+    position: relative;
+    width: 68px;
+    height: 60px;
+    margin: auto;
+  
+  }
+
+  
+.version-text{
+    color: red; 
+    margin-left: 30%;
+   }
+
+
+.pedidos-container{
+    width: 290px;
+    margin: 0 5px;
+    h2{
+      font-weight: bold;
+      font-size: 17px;
+    }
+  }
+
+  .display-nome{
+    margin: auto;
+  }
+
+  .pedidos-precos{
+    display: flex;  
+    span{
+      font-size: 12px;
+      font-weight: bold;  
+      margin-left: 10px;
+    }
+  }
+
+  .pedidos-itens{
+    margin-bottom: 20px;  
+  }
+  

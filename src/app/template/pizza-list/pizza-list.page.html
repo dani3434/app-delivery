@@ -4,24 +4,18 @@
     <ion-buttons slot="start">
       <ion-back-button defaultHref="home"></ion-back-button>
     </ion-buttons>
-    <ion-title>Pizza's</ion-title>
+    <ion-title>PIZZA'S</ion-title>
+    <ion-button fill="clear" slot="end"  (click)="carrinhoPage()">
+      <ion-icon  name="cart-outline" style="zoom:1.5;" ></ion-icon>
+      <ion-badge slot="start">2</ion-badge>
+    
+    </ion-button>  
   </ion-toolbar>
+
 
 </ion-header>
 
 <ion-content>
-  <ion-fab vertical="top" edge horizontal="end" slot="fixed">
-    <ion-fab-button (click)="carrinhoPage()">
-      <ion-badge color="success">5</ion-badge>
-      <ion-icon name="cart-outline"></ion-icon>
-    </ion-fab-button>
-  </ion-fab>
-
-  <br>
-  <br>
-  <br>
-  <br>
-
 
   <ion-list>
      

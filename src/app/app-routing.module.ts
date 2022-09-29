@@ -19,10 +19,6 @@ const routes: Routes = [
     loadChildren: () => import('./cadastro/cadastro.module').then( m => m.CadastroPageModule)
   },
   {
-    path: 'tab4',
-    loadChildren: () => import('./tab4/tab4.module').then( m => m.Tab4PageModule)
-  },
-  {
     path: 'endereco-menu',
     loadChildren: () => import('./template/endereco-menu/endereco-menu.module').then( m => m.EnderecoMenuPageModule)
   },
@@ -69,10 +65,6 @@ const routes: Routes = [
   {
     path: 'carrinho',
     loadChildren: () => import('./template/carrinho/carrinho.module').then( m => m.CarrinhoPageModule)
-  },
-  {
-    path: 'historico-pedidos',
-    loadChildren: () => import('./template/historico-pedidos/historico-pedidos.module').then( m => m.HistoricoPedidosPageModule)
   },
   {
     path: 'adicionar-formade-pagamento',

@@ -22,7 +22,7 @@
     }
   },
   "server": {
-    "url": "http://10.0.0.105:8100",
+    "url": "http://localhost:8100",
     "cleartext": true
   }
 }

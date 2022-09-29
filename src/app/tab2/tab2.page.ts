@@ -46,6 +46,9 @@ export class Tab2Page implements OnInit{
     this.menu.enable(true, 'menu-global');
     this.menu.open('menu-global');
   }
+  carrinhoPage(){
+    this.router.navigate(["carrinho"])
 
+  }
 
 }

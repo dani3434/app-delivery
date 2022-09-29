@@ -1,0 +1,33 @@
+:host{
+  
+    .mais-pedidos{
+      margin:15px 0;
+    }
+    .mais-pedidos h2{
+      font-weight: bold;
+      font-size: 16px;
+      margin-left: 15px;
+      color: var(--ion-text-color);
+    }
+  
+  .img-slid{
+    padding: 5px;
+    }
+    ion-slide:first-child{
+     margin-left: 5px;
+     margin-right: 5px;
+    }
+    
+    
+    .botao-menu{
+      left: -160px;
+      ion-icon{
+        width: 2em;
+        height: 2em;
+        color:#201e13;
+      }
+    }
+  
+  }
+  
+  
